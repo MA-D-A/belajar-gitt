@@ -10,11 +10,11 @@
   <!--contoh penggunaan form dari type data formnya  dan label dan placeholder sebagai petunjuk inputan nya untuk apa  -->
   <form action="/daftar" method="post">
     <div><label for="nama"></label>
-    <input type="text" placeholder="Nama" id="nama" name="nama"></div>
+    <input type="text" placeholder="Nama" id="nama" name="nama" required minlength="6"></div>
     <div>  <label for="alamat email"></label>
-      <input type="email" placeholder="alamat email" id="email" name="email"></div>
+      <input type="email" placeholder="alamat email" id="email" name="email" required></div>
     <div><label for="Password">Password</label>
-      <input type="password" placeholder="Password" id="Password" name="Password"></div> <!--name biasanya buat menyimpan value-->
+      <input type="password" placeholder="Password" id="Password" name="Password" required></div> <!--name biasanya buat menyimpan value-->
       <hr>
     <!--place holder untu kata dalam form dan for untuk meletak bahwa label ini milik siapa dan id  juga untuk me nanda/semantik-->
     <label for="Date">tanggal</label>
@@ -46,6 +46,7 @@
   <!--selected button-->
   <div>
     <h1> select </h1>
+    <input type="number" required min="1" max="5">
     <label for="ukuran"> ukuran</label>
   <select name="ukuran" id="ukuran">
     <option>-</option>
@@ -53,13 +54,21 @@
     <option value="xl" selected>xl</option>
     <option value="l">l</option>
   </select>
+ 
      </div>
-     <button type="submit">order</button> </div>
-     <!--checksbox-->
-<div>
+     <div>
+      <label for="notes">Catatan untuk penjual</label>
+      <textarea name="notes" id="notes" cols="30" rows="5"></textarea>
+    </div>
+     <div>
   <label for="term">sesuai pesanan</label>
-  <input type="checkbox" name="term" id="term" checked>
+  <input type="checkbox" name="term" id="term" value="benar" checked>
 </div>
+     <button type="submit">order</button> </div>
+     <hr>
+     <!--checksbox-->
+ 
+
  
 
   </form>
