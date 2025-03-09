@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<body>
+  <h1>formulir asli
+  </h1>
+  <!--contoh penggunaan form dari type data formnya  dan label dan placeholder sebagai petunjuk inputan nya untuk apa  -->
+  <form action="/daftar" method="post">
+    <div><label for="nama"></label>
+    <input type="text" placeholder="Nama" id="nama" name="nama" required minlength="6"></div>
+    <div>  <label for="alamat email"></label>
+      <input type="email" placeholder="alamat email" id="email" name="email" required></div>
+    <div><label for="Password">Password</label>
+      <input type="password" placeholder="Password" id="Password" name="Password" required></div> <!--name biasanya buat menyimpan value-->
+      <hr>
+    <!--place holder untu kata dalam form dan for untuk meletak bahwa label ini milik siapa dan id  juga untuk me nanda/semantik-->
+    <label for="Date">tanggal</label>
+    <input type="date" placeholder="Date" id="Date">
+  
+    <label for="Checkbox">chekboks</label>
+    <input type="checkbox" placeholder="Checkbox" id="Checkbox">
+    <label for="Button">Tombol</label>
+    <input type="button" value="Button" id="Button">
+    <label for="Button">Tombol</label>
+    <input type="submit" value="submit" id="Button"> <!--kalo inputan seperti button check box dll kita menggunakan value dripada placeholder-->
+    <button type="button">hooh</button>
+    <button type="submit">kirim</button>
+  
+    <label for="File">isi file</label>
+    <input type="file" placeholder="File">
+    
+  </form>
+  <hr>
+  <!--radio button-->
+  <form action="/order" >
+<label for=""> baju</label>
+<div> <input type="radio" name="baju" id="" value="kemeja"><label for=""> kemeja</label>
+  <input type="radio" name="baju" id="" value="kaos" checked><label for=""> kaos</label>
+  <button type="submit">order</button> </div>
+
+
+  <hr>
+  <!--selected button-->
+  <div>
+    <h1> select </h1>
+    <input type="number" required min="1" max="5">
+    <label for="ukuran"> ukuran</label>
+  <select name="ukuran" id="ukuran">
+    <option>-</option>
+    <option value="xxl">xxl</option>
+    <option value="xl" selected>xl</option>
+    <option value="l">l</option>
+  </select>
+ <!--validasi dan catatan dan requirement suatu form-->
+     </div>
+     <div>
+      <label for="notes">Catatan untuk penjual</label>
+      <textarea name="notes" id="notes" cols="30" rows="5"></textarea>
+    </div>
+     <div>
+  <label for="term">sesuai pesanan</label>
+  <input type="checkbox" name="term" id="term" value="benar" checked>
+</div>
+     <button type="submit">order</button> </div>
+     <hr>
+     <!--checksbox-->
+ 
+
+ 
+
+  </form>
+</body>
+</html>
